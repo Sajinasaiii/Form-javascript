@@ -1,0 +1,85 @@
+.main
+{
+    width: 30%; 
+    margin: 0 auto;
+    border: 15px solid white;
+    box-shadow: 0 0 10px;
+    margin-top: 9px;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.heading
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.first
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.last
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+input[type="text"] 
+{
+    margin-top: 5px;
+}
+.person
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.id
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+input[type="email"] 
+{
+    margin-top: 5px;
+}
+.contact
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.numbers
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.month
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.read
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.password1
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.password2
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.picture
+{
+    padding-left: 25px;
+    font-weight: bold;
+}
+.submit1
+{
+    margin-left: 180px;
+}
