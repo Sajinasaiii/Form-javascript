@@ -1,43 +1,46 @@
-.main
-{
-    width: 30%; 
-    margin: 0 auto;
-    border: 15px solid white;
-    box-shadow: 0 0 10px;
-    margin-top: 9px;
-}
 body
 {
     padding: 0;
     margin: 0;
 }
+.main
+{
+    width: 30%; 
+    margin: 0 auto;
+    border: 0px solid white;
+    box-shadow: 0 0 10px;
+    margin-top: 9px;
+}
 .heading
 {
     text-align: center;
-    padding-bottom: 20px;
 }
-.first
+form
 {
-    padding-left: 25px;
-    font-weight: bold;
+    background-image: url("../image/img1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
 }
-.last
+input[type="file"] 
 {
-    padding-left: 25px;
-    font-weight: bold;
+    margin-top: 10px;
 }
-input[type="text"] 
+input#idnew 
 {
-    margin-top: 5px;
+    width: 69%;
+}
+input#numbers 
+{
+    width: 51%;
 }
 .person
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .id
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 input[type="email"] 
@@ -51,35 +54,85 @@ input[type="email"]
 }
 .numbers
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .month
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .read
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .password1
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .password2
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .picture
 {
-    padding-left: 25px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .submit1
 {
     margin-left: 180px;
+    margin-top: 5px;
+    margin-bottom: 12px;
 }
+/* ----------- here ------------- */
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password],input[type=email] ,input[type=tel],textarea,input[type=date]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.imageupload{
+    margin-bottom:20px;
+}
+.radio-checkbox{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+
+}
+
+
+
