@@ -18,8 +18,8 @@ body
 } */
 .heading
 {
-    /* text-align: center; */
-    margin-left: 118px;
+    text-align: center;
+    /* margin-left: 118px; */
 }
 form
 {
@@ -97,26 +97,26 @@ input[type="email"]
 }
 input[type=text], input[type=password],input[type=email] ,input[type=tel],textarea,input[type=date]
 {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+    width: 98%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 /* input#address 
 {
     height: 79px;
 } */
 button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  /* width: 100%; */
-  margin-left: 166px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+    margin-left: 166px;
 }
 button:hover {
     opacity: 0.8;
@@ -132,15 +132,15 @@ span.psw {
     margin-bottom:20px;
 }
 .radio-checkbox{
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
 }
-.Notvalid
+/* .Notvalid
 {
-    color:darkorange;
-}
+    color:red;
+} */
 .new
 {
     margin-bottom: 10px;

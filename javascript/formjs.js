@@ -23,136 +23,136 @@ function validateForm()
     let number = document.forms["myForm"]["mobile"].value;
     let file = document.forms["myForm"]["fileupload"].value;
     let validmobile=/^\d{10}$/;
-    let Notvalid = document.getElementsByClassName("Notvalid");
+    // let Notvalid = document.getElementsByClassName("Notvalid");
     if (fname == "") 
     {
-        Notvalid[0].innerHTML="First Name must be filled out";
-        // alert("First Name must be filled out");
-        // return false;
+        // Notvalid[0].innerHTML="First Name must be filled out";
+        alert("First Name must be filled out");
+        return false;
     }
     else if(!isNaN(fname))
     {
-        Notvalid[0].innerHTML="First Name name should not be number";
-        // alert("First name should not be number");
-        // return false;
+        // Notvalid[0].innerHTML="First Name name should not be number";
+        alert("First name should not be number");
+        return false;
     }
     else if(!fname.match(name))
     {
-        Notvalid[0].innerHTML="Name only allowed alphabets";
-        // alert("Name only allowed alphabets");
-        // return false;
+        // Notvalid[0].innerHTML="Name only allowed alphabets";
+        alert("Name only allowed alphabets");
+        return false;
     }
     else
     {
-        Notvalid[0].innerHTML="";
+        // Notvalid[0].innerHTML="";
     }
     if (lname == "") 
     {
-        Notvalid[1].innerHTML="Last Name must be filled out";
-        // alert(" Last Name must be filled out");
-        // return false;
+        // Notvalid[1].innerHTML="Last Name must be filled out";
+        alert(" Last Name must be filled out");
+        return false;
     }
     else if(!isNaN(lname))
     {
-        Notvalid[1].innerHTML="Last name should not be number";
-        // alert("Last name should not be number");
-        // return false;
+        // Notvalid[1].innerHTML="Last name should not be number";
+        alert("Last name should not be number");
+        return false;
     }
     else if(!lname.match(name))
     {
-        Notvalid[1].innerHTML="Name only allowed alphabets";
-        // alert("Name only allowed alphabets");
-        // return false;
+        // Notvalid[1].innerHTML="Name only allowed alphabets";
+        alert("Name only allowed alphabets");
+        return false;
     }
     else
     {
-        Notvalid[1].innerHTML="";
+        // Notvalid[1].innerHTML="";
     }
     if (emailnew == "") 
     {
-        Notvalid[2].innerHTML="Email Id must be filled out";
-        // alert("Email Id must be filled out");
-        // return false;
+        // Notvalid[2].innerHTML="Email Id must be filled out";
+        alert("Email Id must be filled out");
+        return false;
     }
     else
     {
-        Notvalid[2].innerHTML="";
+        // Notvalid[2].innerHTML="";
     }
     if (address == "") 
     {
-        Notvalid[3].innerHTML="Adress must be filled out";
-    //  alert("Adress must be filled out");
-    //  return false;
+        // Notvalid[3].innerHTML="Adress must be filled out";
+     alert("Adress must be filled out");
+     return false;
     }
     else
     {
-        Notvalid[3].innerHTML="";
+        // Notvalid[3].innerHTML="";
     }
     if (language1==false && language2==false && language3==false) 
     {
-        Notvalid[4].innerHTML="Languages must be filled out";
-        // alert("Languages must be filled out");
-        // return false;
+        // Notvalid[4].innerHTML="Languages must be filled out";
+        alert("Languages must be filled out");
+        return false;
     }
     else
     {
-        Notvalid[4].innerHTML="";
+        // Notvalid[4].innerHTML="";
     }
     if (birth == "") 
     {
-        Notvalid[5].innerHTML="DOB must be filled out";
-        // alert("DOB must be filled out");
-        // return false;
+        // Notvalid[5].innerHTML="DOB must be filled out";
+        alert("DOB must be filled out");
+        return false;
     }
     else
     {
-        Notvalid[5].innerHTML="";
+        // Notvalid[5].innerHTML="";
     }
-    if (gender1.checked) 
+    if (gender1) 
     {
-        Notvalid[6].innerHTML="Gender must be filled out";
-        // alert("Gender must be filled out");
-        // return false;
+        // Notvalid[6].innerHTML="Gender must be filled out";
+        alert("Gender must be filled out");
+        return false;
     }
     else
     {
-        Notvalid[6].innerHTML="";
+        // Notvalid[6].innerHTML="";
     }
     if (number == "") 
     {
-        Notvalid[7].innerHTML="Mobile number must be filled out";
-        // alert("Mobile number must be filled out");
-        // return false;
+        // Notvalid[7].innerHTML="Mobile number must be filled out";
+        alert("Mobile number must be filled out");
+        return false;
     }
     else if(!number.match(validmobile))
     {
-        Notvalid[7].innerHTML="Number not valid";
-        // alert("Number not valid");
-        // return false;
+        // Notvalid[7].innerHTML="Number not valid";
+        alert("Number not valid");
+        return false;
     }
     else
     {
-        Notvalid[7].innerHTML="";
+        // Notvalid[7].innerHTML="";
     }
     if(!pass.match(password)||!pass1.match(password))
     {
-        Notvalid[8].innerHTML="Password which must include one small,capital,special letters";
-        // alert("Password which must include one small,capital,special letters");
-        // return false;
+        // Notvalid[8].innerHTML="Password which must include one small,capital,special letters";
+        alert("Password which must include one small,capital,special letters");
+        return false;
     }
     else
     {
-        Notvalid[8].innerHTML="";
+        // Notvalid[8].innerHTML="";
     }
     if (file=="") 
     {
-        Notvalid[9].innerHTML="Profile image must be filled out";
-        // alert("Profile image must be filled out");
-        // return false;
+        // Notvalid[9].innerHTML="Profile image must be filled out";
+        alert("Profile image must be filled out");
+        return false;
     }
     else
     {
-        Notvalid[9].innerHTML="";
+        // Notvalid[9].innerHTML="";
     }
 }
 

@@ -8,126 +8,123 @@
         <link href="css/index-form.css" rel="stylesheet" />
     </head>
     <body>
-        <form class="main" method="post" name="myForm" onclick="return validateForm()" id="newform">
-            <div class="container">
-              <h1 class="heading">
-                Registration Form
-              </h1>
-              <div class="new">
-              <label for="first">
-                <b>First Name</b>
-              </label>
-              <input type="text" placeholder="Enter FirstName" name="fname"  id="first" value="" >
-              <span class="Notvalid">
-              </span>
-              </div>
-              <div class="new">
-              <label for="last">
-                <b>Last Name</b>
-              </label>
-              <input type="text" placeholder="Enter Last name" name="lname" id="last" >
-              <span class="Notvalid">
-              </span>
-              </div>  
-              <div class="new">
-              <label for="email">
-                <b>Email</b>
-              </label>
-              <input type="email" placeholder="Enter Email" name="email" id="email" >
-              <span class="Notvalid">
-              </span>
-              </div>
-              <div class="new">
-              <label for="address">
-                <b>Address</b>
-              </label>
-              <input type="text" id="address" name="address" rows="5" cols="55">
-              <span class="Notvalid">
-              </span>
-              </div>
-              <label>
-                <b>Languages Known</b>
-              </label>
-              <!-- <br> -->
-              <span class="radio-checkbox">
-                <input type="checkbox" name="eng" id="language1"> 
-                  English
-                <input type="checkbox" name="hindi" id="language2"> 
-                  Hindi
-                <input type="checkbox" name="mal" id="language3"> 
-                  Malayalam
-                  <br>
-                  <span class="Notvalid">
-                  </span>
-              </span>
-            <br>
-            <div class="new">
-            <label for="dob">
-              <b>Date of birth</b>
+      <form class="main" method="post" name="myForm" onsubmit="return validateForm()" id="newform">
+        <div class="container">
+          <h1 class="heading">
+            Registration Form
+          </h1>
+        <!-- <div class="new"> -->
+          <label for="first">
+            <b>First Name</b>
+          </label>
+          <input type="text" placeholder="Enter FirstName" name="fname"  id="first" value="" >
+          <!-- <span class="Notvalid"> -->
+          <!-- </span> -->
+        <!-- </div> -->
+        <!-- <div class="new"> -->
+          <label for="last">
+            <b>Last Name</b>
+          </label>
+          <input type="text" placeholder="Enter Last name" name="lname" id="last" >
+          <!-- <span class="Notvalid"> -->
+          <!-- </span> -->
+        <!-- </div>   -->
+        <!-- <div class="new"> -->
+          <label for="email">
+            <b>Email</b>
+          </label>
+          <input type="email" placeholder="Enter Email" name="email" id="email" >
+          <!-- <span class="Notvalid"> -->
+          <!-- </span> -->
+        <!-- </div> -->
+        <!-- <div class="new"> -->
+          <label for="address">
+            <b>Address</b>
+          </label>
+          <input type="text" id="address" name="address">
+          <!-- <span class="Notvalid"> -->
+          <!-- </span> -->
+        <!-- </div> -->
+          <label>
+            <b>Languages Known</b>
+          </label>
+          <span class="radio-checkbox">
+            <input type="checkbox" name="eng" id="language1"> 
+              English
+              <input type="checkbox" name="hindi" id="language2"> 
+              Hindi
+              <input type="checkbox" name="mal" id="language3"> 
+              Malayalam
+              <br>
+              <!-- <span class="Notvalid"> -->
+              <!-- </span> -->
+          </span>
+          <br>
+          <!-- <div class="new"> -->
+          <label for="dob">
+            <b>Date of birth</b>
+          </label>
+          <input type="date" name="dob" id="dob" >
+          <!-- <span class="Notvalid">
+          </span>
+        </div> -->
+          <label>
+            <b>Gender</b>
+          </label>
+          <br>
+          <div class="radio-checkbox">
+            <input type="radio" id="gen1" name="gen1" value="female">
+            <!-- <span class="Notvalid">
+            </span> -->
+            <label for="gen1">
+              Female
             </label>
-            <input type="date" name="dob" id="dob" >
-            <span class="Notvalid">
-            </span>
-            </div>
-           
-            <label>
-              <b>Gender</b>
-            </label>
             <br>
-            <div class="radio-checkbox">
-                <input type="radio" id="gen1" name="gen1" value="female">
-                <span class="Notvalid">
-                </span>
-                <label for="gen1">
-                  Female
-                </label>
-                  <br>
-                <input type="radio" id="gen2" name="gen1" value="male">
-                <span class="Notvalid">
-                </span>
-                <label for="gen2">
-                  Male
-                </label>
-              
-                <!-- <br> -->
-            </div>
-
-              <div class="new">
-              <label for="mobile">
-                <b>Mobile</b>
-              </label>
-              <input type="tel" placeholder="Enter mobile Number" name="mobile" id="mobile" >
-              <span class="Notvalid">
+            <input type="radio" id="gen2" name="gen1" value="male">
+            <!-- <span class="Notvalid">
+            </span> -->
+            <label for="gen2">
+              Male
+            </label>
+            <!-- <br>
+            <br> -->
+          </div>
+          <!-- <div class="new"> -->
+          <label for="mobile">
+            <b>Mobile</b>
+          </label>
+          <input type="tel" placeholder="Enter mobile Number" name="mobile" id="mobile" >
+              <!-- <span class="Notvalid">
+              </span>
+              </div> -->
+              <!-- <div class="new"> -->
+            <label for="password">
+              <b>Password</b>
+            </label>
+            <input type="password" placeholder="Enter Password" name="password" id="password" >
+              <!-- <span class="Notvalid">
               </span>
               </div>
-              <div class="new">
-              <label for="password">
-                <b>Password</b>
-              </label>
-              <input type="password" placeholder="Enter Password" name="password" id="password" >
-              <span class="Notvalid">
+              <div class="new"> -->
+            <label for="password2">
+              <b>Confirm Password</b>
+            </label>
+            <input type="password" placeholder="Confirm Password" name="password2" id="password2" >
+              <!-- <span class="Notvalid">
+              </span> -->
+              <!-- </div> -->
+              <!-- <div class="new"> -->
+            <label for="fileupload">
+              <b>Upload Profile Image</b>
+            </label>
+            <input class="imageupload" type="file" name="fileupload" id="fileupload" >
+              <!-- <span class="Notvalid">
               </span>
-              </div>
-              <div class="new">
-              <label for="password2">
-                <b>Confirm Password</b>
-              </label>
-              <input type="password" placeholder="Confirm Password" name="password2" id="password2" >
-              <span class="Notvalid">
-              </span>
-              </div>
-              <div class="new">
-              <label for="fileupload">
-                <b>Upload Profile Image</b>
-              </label>
-              <input class="imageupload" type="file" name="fileupload" id="fileupload" >
-              <span class="Notvalid">
-              </span>
-              </div>
-              <button type="submit" value="submit">
-                Submit
-              </button>
-            </div>
-        </form>
+              </div> -->
+            <button type="submit" value="submit">
+              Submit
+            </button>
+          </div>
+      </form>
     </body>
 </html>
