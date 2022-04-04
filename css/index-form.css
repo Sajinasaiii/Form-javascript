@@ -2,6 +2,7 @@ body
 {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main
 {
@@ -11,15 +12,21 @@ body
     box-shadow: 0 0 10px;
     margin-top: 9px;
 }
+/* .container
+{
+    width: 70%;
+} */
 .heading
 {
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 118px;
 }
 form
 {
     background-image: url("../image/img1.jpg");
     background-repeat:no-repeat;
     background-size: cover;
+    border: 3px solid #f1f1f1;
 }
 input[type="file"] 
 {
@@ -88,11 +95,8 @@ input[type="email"]
     margin-top: 5px;
     margin-bottom: 12px;
 }
-/* ----------- here ------------- */
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password],input[type=email] ,input[type=tel],textarea,input[type=date]{
+input[type=text], input[type=password],input[type=email] ,input[type=tel],textarea,input[type=date]
+{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -100,7 +104,10 @@ input[type=text], input[type=password],input[type=email] ,input[type=tel],textar
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
+/* input#address 
+{
+    height: 79px;
+} */
 button {
   background-color: #04AA6D;
   color: white;
@@ -108,20 +115,18 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  /* width: 100%; */
+  margin-left: 166px;
 }
-
 button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
-
 .container {
-  padding: 16px;
+    padding: 16px;
 }
-
 span.psw {
-  float: right;
-  padding-top: 16px;
+    float: right;
+    padding-top: 16px;
 }
 .imageupload{
     margin-bottom:20px;
@@ -131,7 +136,14 @@ span.psw {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-
+}
+.Notvalid
+{
+    color:darkorange;
+}
+.new
+{
+    margin-bottom: 10px;
 }
 
 
