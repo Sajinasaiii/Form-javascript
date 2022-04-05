@@ -19,7 +19,7 @@ function validateForm()
     // let language1 = document.forms["myForm"]["hindi"];
     // let language2 = document.forms["myForm"]["mal"];
     let birth = document.forms["myForm"]["dob"].value;
-    let gender1 = document.forms["myForm"]["gen1"].value;
+    let gender = document.getElementsByClassName("gen1");
     let number = document.forms["myForm"]["mobile"].value;
     let file = document.forms["myForm"]["fileupload"].value;
     let validmobile=/^\d{10}$/;
@@ -108,7 +108,7 @@ function validateForm()
     {
         // Notvalid[5].innerHTML="";
     }
-    if (gender1) 
+    if (gender[0].checked==false && gender[1].checked==false) 
     {
         // Notvalid[6].innerHTML="Gender must be filled out";
         alert("Gender must be filled out");
