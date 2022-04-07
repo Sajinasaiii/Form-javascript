@@ -189,10 +189,10 @@ if (file.value=="")
     }
 else if(file.value!="")
     {
-        let validExtension=["jpeg","jpg","png"];
-        let imageExtensionPosition=file.value.lastIndexOf(".");
-        let inputExtension=file.value.substring(imageExtensionPosition+1);
-        let result=validExtension.includes(inputExtension);
+        let validPictureExtension=["jpeg","jpg","png"];
+        let pictureExtension=file.value.lastIndexOf(".");
+        let inputExtension=file.value.substring(pictureExtension+1);
+        let result=validPictureExtension.includes(inputExtension);
         if(!result)
         {
             file.nextElementSibling.innerHTML="File not valid";
