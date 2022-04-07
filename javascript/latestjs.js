@@ -187,17 +187,26 @@ if (file.value=="")
     {
         file.nextElementSibling.innerHTML="Profile image must be filled out";
     }
+else if(file.value!="")
+    {
+        let validExtension=["jpeg","jpg","png"];
+        let imageExtensionPosition=file.value.lastIndexOf(".");
+        let inputExtension=file.value.substring(imageExtensionPosition+1);
+        let result=validExtension.includes(inputExtension);
+        if(!result)
+        {
+            file.nextElementSibling.innerHTML="File not valid";
+        }
+        else
+        {
+            file.nextElementSibling.innerHTML="";
+        }
+    }
 else
     {
         file.nextElementSibling.innerHTML="";
     }
 }
-// function icon(input)
-// {
-//     let feildDiv=input.parentElement;
-//     feildDiv.className="feildDiv success";
-// }
-
 
     
 
