@@ -17,16 +17,17 @@
                     <label for="first">
                         <b>First Name</b>
                     </label>
-                    <input type="text" placeholder="Enter FirstName" name="fname" id="first" value="">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="text" placeholder="Enter FirstName" name="fname" id="first" value="" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
-                    <!-- <i class="fa-solid fa-circle-exclamation"></i> -->
                 </div>
                 <div class="new">
                     <label for="last">
                         <b>Last Name</b>
                     </label>
-                    <input type="text" placeholder="Enter Last name" name="lname" id="last">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="text" placeholder="Enter Last name" name="lname" id="last" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -34,7 +35,8 @@
                     <label for="email">
                         <b>Email</b>
                     </label>
-                    <input type="email" placeholder="Enter Email" name="email" id="email">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -42,7 +44,8 @@
                     <label for="address">
                         <b>Address</b>
                     </label>
-                    <input type="text" id="address" name="address">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="text" id="address" name="address" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -64,7 +67,8 @@
                     <label for="dob">
                         <b>Date of birth</b>
                     </label>
-                    <input type="date" name="dob" id="dob">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="date" name="dob" id="dob" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -73,14 +77,14 @@
                 </label>
                 <br>
                 <div class="radio-checkbox">
-                    <input type="radio" id="gen1" name="gen1" value="female">   Female
+                    <input type="radio" id="gen1" name="gen1" value="female" onblur="validateForm()">   Female
                     <!-- <span class="Notvalid">
                     </span>  -->
                     <!-- <label for="gen1">
                     Female
                     </label> -->
                     <br>
-                    <input type="radio" id="gen2" name="gen1" value="male"> Male
+                    <input type="radio" id="gen2" name="gen1" value="male" onblur="validateForm()"> Male
                     <!-- <br> -->
                     <div class="Notvalid">
                     </div>
@@ -94,7 +98,8 @@
                     <label for="mobile">
                         <b>Mobile</b>
                     </label>
-                    <input type="tel" placeholder="Enter mobile Number" name="mobile" id="mobile">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="tel" placeholder="Enter mobile Number" name="mobile" id="mobile" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -102,7 +107,8 @@
                     <label for="password">
                         <b>Password</b>
                     </label>
-                    <input type="password" placeholder="Enter Password" name="password" id="password1">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="password" placeholder="Enter Password" name="password" id="password1" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -110,7 +116,8 @@
                     <label for="password2">
                         <b>Confirm Password</b>
                     </label>
-                    <input type="password" placeholder="Confirm Password" name="password2" id="password2">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="password" placeholder="Confirm Password" name="password2" id="password2" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -118,7 +125,7 @@
                     <label for="fileupload">
                         <b>Upload Profile Image</b>
                     </label>
-                    <input class="imageupload" type="file" name="fileupload" id="fileupload">
+                    <input class="imageupload" type="file" name="fileupload" id="fileupload" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>

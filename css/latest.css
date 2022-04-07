@@ -104,16 +104,17 @@ input[type=text], input[type=password],input[type=email] ,input[type=tel],textar
     /* border: 1px solid #ccc; */
     box-sizing: border-box;
 }
-input[type=text], input[type=password],input[type=email] ,input[type=tel]
+/* input[type=text], input[type=password],input[type=email] ,input[type=tel]
 {
     background-image: url("../image/alert.jpg");
     background-repeat:no-repeat;
-}
+} */
 /* input#address 
 {
     height: 79px;
 } */
-button {
+button 
+{
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -123,20 +124,25 @@ button {
     /* width: 100%; */
     margin-left: 166px;
 }
-button:hover {
+button:hover 
+{
     opacity: 0.8;
 }
-.container {
+.container 
+{
     padding: 16px;
 }
-span.psw {
+span.psw 
+{
     float: right;
     padding-top: 16px;
 }
-.imageupload{
+.imageupload
+{
     margin-bottom:20px;
 }
-.radio-checkbox{
+.radio-checkbox
+{
     width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -147,15 +153,23 @@ span.psw {
     color:rgba(219, 3, 3, 0.822);
     font-size: 13px;
 }
+.fa-circle-exclamation
+{
+    position: absolute;
+    right: 15px;
+    top: 42px;
+    visibility: hidden; 
+    /* margin-top: 40px; */
+    color: rgba(219, 3, 3, 0.822);
+    /* margin-left: 295px */
+} 
 .new
 {
+    position: relative;
     margin-bottom: 10px;
-}
-/* .fa-square-exclamation
+} 
+/* input:focus 
 {
-    /* visibility: hidden; */
-/* } */ 
-/* input:focus {
     background: #fc9fff;  
 } */
 .highlight
@@ -167,6 +181,10 @@ span.psw {
 {
     border: 2px solid rgb(0, 255, 229);
     box-shadow: 0 0 10px;
+}
+.icon
+{
+    visibility: visible;
 }
 
 
