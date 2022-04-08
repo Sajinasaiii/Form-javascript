@@ -186,5 +186,9 @@ span.psw
 {
     visibility: visible;
 }
+#block
+{
+    display: block;
+}
 
 
