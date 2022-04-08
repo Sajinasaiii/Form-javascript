@@ -4,7 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Form1</title>
         <script src="javascript/js.js"></script>
-        <script src="javascript/latestjs.js"></script>
         <link href="css/latest.css" rel="stylesheet" />
     </head>
     <body>
@@ -16,15 +15,18 @@
                 <div class="new">
                     <label for="first">
                         <b>First Name</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
-                    <input type="text" placeholder="Enter FirstName" name="fname" id="first" value="" onblur="validateForm()">
+                    <input type="text" placeholder="Enter FirstName" name="fname" id="first" value=""
+                        onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
                 <div class="new">
                     <label for="last">
                         <b>Last Name</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
                     <input type="text" placeholder="Enter Last name" name="lname" id="last" onblur="validateForm()">
@@ -34,6 +36,7 @@
                 <div class="new">
                     <label for="email">
                         <b>Email</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
                     <input type="email" placeholder="Enter Email" name="email" id="email" onblur="validateForm()">
@@ -43,6 +46,7 @@
                 <div class="new">
                     <label for="address">
                         <b>Address</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
                     <input type="text" id="address" name="address" onblur="validateForm()">
@@ -52,11 +56,12 @@
                 <!-- <div class="languages"> -->
                 <label>
                     <b>Languages Known</b>
+                    <i class="fa-solid fa-asterisk"></i>
                 </label>
                 <span class="radio-checkbox">
-                    <input type="checkbox" name="eng" id="language1">   English
+                    <input type="checkbox" name="eng" id="language1"> English
                     <input type="checkbox" name="hindi" id="language2"> Hindi
-                    <input type="checkbox" name="mal" id="language3">   Malayalam
+                    <input type="checkbox" name="mal" id="language3"> Malayalam
                     <!-- <br> -->
                     <!-- </div> -->
                     <span class="Notvalid" id="block">
@@ -66,6 +71,7 @@
                 <div class="new">
                     <label for="dob">
                         <b>Date of birth</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
                     <input type="date" name="dob" id="dob" onblur="validateForm()">
@@ -74,29 +80,31 @@
                 </div>
                 <label>
                     <b>Gender</b>
+                    <i class="fa-solid fa-asterisk"></i>
                 </label>
                 <br>
                 <div class="radio-checkbox">
-                    <input type="radio" id="gen1" name="gen1" value="female" onblur="validateForm()">   Female
+                    <input type="radio" id="gen1" name="gen1" value="female" onblur="validateForm()"> Female
                     <!-- <span class="Notvalid">
-                    </span>  -->
+                        </span>  -->
                     <!-- <label for="gen1">
-                    Female
-                    </label> -->
+                        Female
+                        </label> -->
                     <br>
                     <input type="radio" id="gen2" name="gen1" value="male" onblur="validateForm()"> Male
                     <!-- <br> -->
                     <div class="Notvalid">
                     </div>
                     <!-- <label for="gen2">
-                    Male
-                    </label> -->
+                        Male
+                        </label> -->
                     <!-- <br>
-                    <br> -->
+                        <br> -->
                 </div>
                 <div class="new">
                     <label for="mobile">
                         <b>Mobile</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
                     <input type="tel" placeholder="Enter mobile Number" name="mobile" id="mobile" onblur="validateForm()">
@@ -106,33 +114,41 @@
                 <div class="new">
                     <label for="password1">
                         <b>Password</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
-                    <input type="password" placeholder="Enter Password" name="password" id="password1" onblur="validateForm()">
+                    <input type="password" placeholder="Enter Password" name="password" id="password1"
+                        onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
                 <div class="new">
                     <label for="password2">
                         <b>Confirm Password</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
-                    <input type="password" placeholder="Confirm Password" name="password2" id="password2" onblur="validateForm()">
+                    <input type="password" placeholder="Confirm Password" name="password2" id="password2"
+                        onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
                 <div class="new">
                     <label for="fileupload">
                         <b>Upload Profile Image</b>
+                        <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <input class="imageupload" type="file" name="fileupload" id="fileupload" onblur="validateForm()">
-                    <span class="Notvalid">
-                    </span>
+                    <div class="Notvalid">
+                        <span class="Notvalid">
+                        </span>
+                    </div>
                 </div>
                 <button type="submit" value="submit">
                     Submit
                 </button>
             </div>
         </form>
+        <script src="javascript/latestform.js"></script>
     </body>
 </html>

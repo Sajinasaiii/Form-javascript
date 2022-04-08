@@ -190,5 +190,10 @@ span.psw
 {
     display: block;
 }
+.fa-asterisk
+{
+    font-size: 10px;
+    color: crimson;
+}
 
 
