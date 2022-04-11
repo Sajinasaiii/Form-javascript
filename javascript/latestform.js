@@ -28,137 +28,175 @@ function validateForm() {
         validateForm();
     });
     if (fname.value.trim() == "") {
-        fname.nextElementSibling.innerHTML = "First Name must be filled out";
-        fname.className = "highlight";
-        fname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(fname,"First Name must be filled outFirst");
+        // fname.nextElementSibling.innerText = "First Name must be filled out";
+        // fname.className = "highlight";
+        // fname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!isNaN(fname.value)) {
-        fname.nextElementSibling.innerHTML = "First Name name should not be number";
-        fname.className = "highlight";
-        fname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(fname,"First Name name should not be number");
+        // fname.nextElementSibling.innerText = "First Name name should not be number";
+        // fname.className = "highlight";
+        // fname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!fname.value.match(name)) {
-        fname.nextElementSibling.innerHTML = "Name only allowed alphabets";
-        fname.className = "highlight";
-        fname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(fname,"Name only allowed alphabets");
+        // fname.nextElementSibling.innerText = "Name only allowed alphabets";
+        // fname.className = "highlight";
+        // fname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else {
-        fname.nextElementSibling.innerHTML = "";
-        fname.className = "highlightnew";
-        fname.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(fname,"");
+        // fname.nextElementSibling.innerText = "";
+        // fname.className = "highlightnew";
+        // fname.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (lname.value.trim() == "") {
-        lname.nextElementSibling.innerHTML = "Last Name must be filled out";
-        lname.className = "highlight";
-        lname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(lname,"Last Name must be filled out");
+        // lname.nextElementSibling.innerText = "Last Name must be filled out";
+        // lname.className = "highlight";
+        // lname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!isNaN(lname.value)) {
-        lname.nextElementSibling.innerHTML = "Last name should not be number";
-        lname.className = "highlight";
-        lname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(lname,"Last name should not be number");
+        // lname.nextElementSibling.innerText = "Last name should not be number";
+        // lname.className = "highlight";
+        // lname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!lname.value.match(name)) {
-        lname.nextElementSibling.innerHTML = "Name only allowed alphabets";
-        lname.className = "highlight";
-        lname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(lname,"Name only allowed alphabets");
+        // lname.nextElementSibling.innerText = "Name only allowed alphabets";
+        // lname.className = "highlight";
+        // lname.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else {
-        lname.nextElementSibling.innerHTML = "";
-        lname.className = "highlightnew";
-        lname.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(lname,"");
+        // lname.nextElementSibling.innerText = "";
+        // lname.className = "highlightnew";
+        // lname.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (emailnew.value.trim() == "") {
-        emailnew.nextElementSibling.innerHTML = "Email Id must be filled out";
-        emailnew.className = "highlight";
-        emailnew.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(emailnew,"Email Id must be filled out");
+        // emailnew.nextElementSibling.innerText = "Email Id must be filled out";
+        // emailnew.className = "highlight";
+        // emailnew.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!emailnew.value.match(validemailid)) {
-        emailnew.nextElementSibling.innerHTML = "Email not valid";
-        emailnew.className = "highlight";
-        emailnew.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(emailnew,"Email not valid");
+        // emailnew.nextElementSibling.innerText = "Email not valid";
+        // emailnew.className = "highlight";
+        // emailnew.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else {
-        emailnew.nextElementSibling.innerHTML = "";
-        emailnew.className = "highlightnew";
-        emailnew.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(emailnew,"");
+        // emailnew.nextElementSibling.innerText = "";
+        // emailnew.className = "highlightnew";
+        // emailnew.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (address.value.trim() == "") {
-        address.nextElementSibling.innerHTML = "Adress must be filled out";
-        address.className = "highlight";
-        address.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(address,"Adress must be filled out");
+        // address.nextElementSibling.innerText = "Adress must be filled out";
+        // address.className = "highlight";
+        // address.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if ((address.value.length < 15) || (address.value.length > 100)) {
-        address.nextElementSibling.innerHTML = "Adress must be 15-100 characters length";
-        address.className = "highlight";
-        address.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(address,"Adress must be 15-100 characters length");
+        // address.nextElementSibling.innerText = "Adress must be 15-100 characters length";
+        // address.className = "highlight";
+        // address.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else {
-        address.nextElementSibling.innerHTML = "";
-        address.className = "highlightnew";
-        address.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(address,"");
+        // address.nextElementSibling.innerText = "";
+        // address.className = "highlightnew";
+        // address.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (language1.checked == false && language2.checked == false && language3.checked == false) {
-        language3.nextElementSibling.innerHTML = "Languages must be filled out";
+        language3.nextElementSibling.innerText = "Languages must be filled out";
     } else {
-        language3.nextElementSibling.innerHTML = "";
+        language3.nextElementSibling.innerText = "";
     }
     if (birth.value == "") {
-        birth.nextElementSibling.innerHTML = "DOB must be filled out";
-        birth.className = "highlight";
-        birth.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(birth,"DOB must be filled out");
+        // birth.nextElementSibling.innerText = "DOB must be filled out";
+        // birth.className = "highlight";
+        // birth.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else {
-        birth.nextElementSibling.innerHTML = "";
-        birth.className = "highlightnew";
-        birth.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(birth,"");
+        // birth.nextElementSibling.innerText = "";
+        // birth.className = "highlightnew";
+        // birth.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (gen1.checked == false && gen2.checked == false) {
-        gen2.nextElementSibling.innerHTML = "Gender must be filled out";
+        gen2.nextElementSibling.innerText = "Gender must be filled out";
     } else {
-        gen2.nextElementSibling.innerHTML = "";
+        gen2.nextElementSibling.innerText = "";
     }
     if (number.value.trim() == "") {
-        number.nextElementSibling.innerHTML = "Mobile number must be filled out";
-        number.className = "highlight";
-        number.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(number,"Mobile number must be filled out");
+        // number.nextElementSibling.innerText = "Mobile number must be filled out";
+        // number.className = "highlight";
+        // number.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!number.value.match(validmobile)) {
-        number.nextElementSibling.innerHTML = "Number not valid";
-        number.className = "highlight";
-        number.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(number,"Number not valid");
+        // number.nextElementSibling.innerText = "Number not valid";
+        // number.className = "highlight";
+        // number.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else {
-        number.nextElementSibling.innerHTML = "";
-        number.className = "highlightnew";
-        number.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(number,"");
+        // number.nextElementSibling.innerText = "";
+        // number.className = "highlightnew";
+        // number.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (password1.value.trim() == "") {
-        password1.nextElementSibling.innerHTML = "Password must be filled out";
-        password1.className = "highlight";
-        password1.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(password1,"Password must be filled out");
+        // password1.nextElementSibling.innerText = "Password must be filled out";
+        // password1.className = "highlight";
+        // password1.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!password1.value.match(password)) {
-        password1.className = "highlight";
-        password1.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
-        password1.nextElementSibling.innerHTML = "Password error";
+        wrong(password1,"Password error");
+        // password1.className = "highlight";
+        // password1.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        // password1.nextElementSibling.innerText = "Password error";
     } else {
-        password1.nextElementSibling.innerHTML = "";
-        password1.className = "highlightnew";
-        password1.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(password1,"");
+        // password1.nextElementSibling.innerText = "";
+        // password1.className = "highlightnew";
+        // password1.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (password2.value.trim() == "") {
-        password2.nextElementSibling.innerHTML = "Password must be filled out";
-        password2.className = "highlight";
-        password2.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(password2,"Password must be filled out");
+        // password2.nextElementSibling.innerText = "Password must be filled out";
+        // password2.className = "highlight";
+        // password2.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else if (!password1.value.match(password) || !password2.value.match(password)) {
-        // password1.nextElementSibling.innerHTML = "Password correct";
-        password2.nextElementSibling.innerHTML = "Password which must include one small,capital,special letters";
-        password2.className = "highlight";
-        password2.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+        wrong(password1,"Password which must include one small,capital,special letters");
+        // password1.nextElementSibling.innerText = "Password correct";
+        // password2.nextElementSibling.innerText = "Password which must include one small,capital,special letters";
+        // password2.className = "highlight";
+        // password2.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
     } else {
-        password2.nextElementSibling.innerHTML = "";
-        password2.className = "highlightnew";
-        password2.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
+        correct(password2,"");
+        // password2.nextElementSibling.innerText = "";
+        // password2.className = "highlightnew";
+        // password2.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
     }
     if (file.value == "") {
-        file.nextElementSibling.innerHTML = "Profile image must be filled out";
+        wrong(file,"Profile image must be filled out");
+        // file.nextElementSibling.innerText = "Profile image must be filled out";
     } else if (file.value != "") {
         let validPictureExtension = ["jpeg", "jpg", "png"];
         let pictureExtension = file.value.lastIndexOf(".");
         let inputExtension = file.value.substring(pictureExtension + 1);
         let result = validPictureExtension.includes(inputExtension);
         if (!result) {
-            file.nextElementSibling.innerHTML = "File not valid";
+            // file.nextElementSibling.innerText = "File not valid";
+            wrong(file,"File not valid");
         } else {
-            file.nextElementSibling.innerHTML = "";
+            // file.nextElementSibling.innerText = "";
+            correct(file,"");
         }
     } else {
-        file.nextElementSibling.innerHTML = "";
+        correct(file,"");
     }
+}
+function wrong(x,m){
+    x.nextElementSibling.innerText = m;
+    x.className = "highlight";
+    x.parentElement.querySelector('.fa-circle-exclamation').classList.add('icon');
+}
+function correct(x,m){
+    x.nextElementSibling.innerText = "";
+    x.className = "highlightnew";
+    x.parentElement.querySelector('.fa-circle-exclamation').classList.remove('icon');
 }
