@@ -7,7 +7,7 @@
         <link href="css/latest.css" rel="stylesheet" />
     </head>
     <body>
-        <form class="main" method="post" name="myForm" onclick="validateForm()" id="newform">
+        <form class="main" name="myForm" id="newform">
             <div class="container">
                 <h1 class="heading">
                     Registration Form
@@ -18,7 +18,8 @@
                         <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
-                    <input type="text" placeholder="Enter FirstName" name="fname" id="first" value="" onblur="validateForm()">
+                    <input type="text" placeholder="Enter FirstName" name="fname" id="first" value=""
+                        onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>
@@ -85,20 +86,20 @@
                 <div class="radio-checkbox">
                     <input type="radio" id="gen1" name="gen1" value="female" onblur="validateForm()"> Female
                     <!-- <span class="Notvalid">
-                        </span>  -->
+                            </span>  -->
                     <!-- <label for="gen1">
-                        Female
-                        </label> -->
+                            Female
+                            </label> -->
                     <br>
                     <input type="radio" id="gen2" name="gen1" value="male" onblur="validateForm()"> Male
                     <!-- <br> -->
                     <div class="Notvalid" id="block1">
                     </div>
                     <!-- <label for="gen2">
-                        Male
-                        </label> -->
+                            Male
+                            </label> -->
                     <!-- <br>
-                        <br> -->
+                            <br> -->
                 </div>
                 <div class="new">
                     <label for="mobile">
@@ -127,8 +128,7 @@
                         <i class="fa-solid fa-asterisk"></i>
                     </label>
                     <i class="fa-solid fa-circle-exclamation"></i>
-                    <input type="password" placeholder="Confirm Password" name="password2" id="password2"
-                        onblur="validateForm()">
+                    <input type="password" placeholder="Confirm Password" name="password2" id="password2" onblur="validateForm()">
                     <span class="Notvalid">
                     </span>
                 </div>

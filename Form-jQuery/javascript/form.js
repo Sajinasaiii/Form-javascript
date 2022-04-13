@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    $("#newform").click(function () {
+    $("input").blur(function () {
+        $("#newform").submit(function (e) {
+            e.preventDefault();
+        });
         let fname = $("#first");
         let lname = $("#last");
         let name = /^[A-Za-z]+$/;
@@ -89,7 +92,7 @@ $(document).ready(function () {
         if (file.val() == "") {
             wrong(file, "Profile image must be filled out");
         } else if (file.val() != "") {
-            let validPictureExtension = ["jpeg", "jpg", "png"];
+            let validPictureExtension = ["jpeg", "jpg", "png", "JPG"];
             let pictureExtension = file.val().lastIndexOf(".");
             let inputExtension = file.val().substring(pictureExtension + 1);
             let result = validPictureExtension.includes(inputExtension);
@@ -101,15 +104,18 @@ $(document).ready(function () {
         } else {
             correct(file, "");
         }
-    })
-    function wrong(x, m) {
-        x.siblings("i").addClass("icon")
-        x.addClass("highlight");
-        x.siblings('.Notvalid').text(m);
-    }
-    function correct(x, m) {
-        // x.siblings().text(m);
-        x.addClass("highlightnew");
-        x.siblings('.Notvalid').text("");
-    }
+    });
 });
+
+function wrong(x, m) {
+    x.siblings("i").addClass("icon")
+    x.addClass("highlight");
+    x.siblings('.Notvalid').text(m);
+}
+
+function correct(x, m) {
+    x.siblings("i").removeClass("icon")
+    // x.siblings().text(m);
+    x.addClass("highlightnew");
+    x.siblings('.Notvalid').text("");
+}
