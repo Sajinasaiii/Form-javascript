@@ -28,12 +28,21 @@ body
     margin-top: 6px;
     margin-bottom: 20px;
 }
+.main-content
+{
+    visibility: hidden;
+}
 .content
 {
-    /* visibility: hidden; */
+    visibility: hidden;
     box-shadow: 0 0 5px;
     width: 25%;
     margin: 0 auto;
     padding: 5px;
     /* height: 10%; */
+}
+.visible
+{
+    visibility:visible;
+    background-color:white;
 }
