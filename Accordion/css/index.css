@@ -1,0 +1,111 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container
+{
+    border: 4px solid blue;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    margin: 5px;
+}
+.main
+{
+    border: 1px solid blue;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    /* width: 90%; */
+    margin-left: 20px;
+    margin-right: 20px ;
+    margin-top: 10px;
+}
+.music
+{
+    /* border: 1px solid blue; */
+    color: white;
+    background-color: blue; 
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 20px;
+    /* position: relative; */
+}
+.sport
+{
+    /* border: 1px solid blue; */
+    color: white;
+    background-color: blue; 
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    /* position: relative; */
+}
+.book
+{
+    /* border: 1px solid blue; */
+    color: white;
+    background-color: blue; 
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    /* position: relative; */
+}
+.movie
+{
+    /* border: 1px solid blue; */
+    color: white;
+    background-color: blue; 
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    /* position: relative; */
+}
+.nature
+{
+    /* border: 1px solid blue; */
+    color: white;
+    background-color: blue;
+    margin-left: 400px;
+    margin-right: 400px; 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+h3
+{
+    padding-left: 10px;
+}
+.music1
+{
+    padding-left: 10px; 
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px rgba(225, 225, 225, 0.5);
+    /* border: 1px solid white; */
+    line-height: 22px;
+    padding: 20px;
+}
+.container .music .fa-circle-chevron-down
+{
+    /* transform: translate(-50%,-50%) rotate(180deg); */
+    transition: all 0.3s ease;
+    /* position:relative; */
+    cursor: pointer;
+} 
+.fa-circle-chevron-down
+{
+    position: absolute;
+    /* float: right; */
+    padding-left: 39%;
+    margin-top: 5px;
+}
+.show
+{
+    padding: 2px;
+}
+.head
+{
+    padding-top: 4px;
+}
