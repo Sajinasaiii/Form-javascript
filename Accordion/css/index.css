@@ -91,7 +91,6 @@ h3
 {
     /* transform: translate(-50%,-50%) rotate(180deg); */
     transition: all 0.3s ease;
-    /* position:relative; */
     cursor: pointer;
 } 
 .fa-circle-chevron-down
