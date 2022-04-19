@@ -96,10 +96,24 @@ h3
 } 
 .fa-circle-chevron-down
 {
-    position: absolute;
-    /* float: right; */
-    padding-left: 39%;
+    /* position: absolute; */
+    float: right;
+    /* padding-left: 39%; */
     margin-top: 5px;
+    margin-right: 17px;
+}
+.fa-circle-chevron-up
+{
+    /* position: absolute; */
+    float: right;
+    /* padding-left: 39%; */
+    margin-top: 5px;
+    margin-right: 17px;
+}
+.visible
+{
+    background-color: blue;
+    color: white;
 }
 .show
 {
