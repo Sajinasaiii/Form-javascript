@@ -2,8 +2,8 @@ $(document).ready(function()
 {
  $(".button").click(function(){
     $(this).hide();
-    $(".main-content").addClass("visible pop-up");
-    $(".content").addClass("visible pop-up");
+    $(".main-content").addClass("visible");
+    $(".content").addClass("visible");
  });
  $(".button1").click(function(){
     $(".button").show();
