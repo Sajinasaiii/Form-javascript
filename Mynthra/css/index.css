@@ -231,7 +231,18 @@ h4
     border-color: rgb(242, 23, 96);;
     padding-left: 5px;
     margin-right: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    /* position: absolute; */
 }
+.money
+{
+    margin-top: 5px;
+}
+/* .fa-bag-shopping
+{
+    position: relative;
+} */
 .btn1:hover
 {
     background-color:rgb(227, 58, 117);
@@ -242,6 +253,11 @@ h4
     width: 26%;
     background-color: white;
     color: black;
+    font-size: 17px;
+    font-weight: bold;
+    border-color: gray;
+    border-bottom-color: gray;
+    border-right-color: gray;
 }
 .btn2:hover
 {
@@ -273,4 +289,94 @@ h4
 .card
 {
     margin-top: 129px;
+    padding: 24px;
+}
+a
+{
+    text-decoration: none;
+    font-size: 15px;
+}
+ul.navbar-nav 
+{
+    width: 100%;
+    padding-bottom: 20px;
+    /* font-size: 20px; */
+}
+.clear
+{
+    clear: both;
+}
+.card-img-top
+{
+    float: left;
+    margin-top: -114px;
+}
+.h66
+{
+    margin-top: 50px;
+    margin-left: 22px;
+}
+.table
+{
+    visibility: hidden;
+}
+.add-button
+{
+    padding-right: 64px;
+    background-color:#ff3e6c;
+    border :1px solid #ff3e6c;
+    color:white;
+    padding:14px 0px;
+    width:290px;
+}
+.wishlist-button
+{
+    width:170px;
+    border:1px solid rgb(221, 219, 219);
+}
+.wishlist-button:hover
+{
+    border:1px solid rgb(49, 48, 48);
+}
+.pincode-box input,button
+{
+    border:none;
+    background-color: white;
+}
+.pincode-box button
+{
+    font-size:14px;
+}
+.pincode-box input:focus
+{
+    outline:none;
+}
+.pincode-box
+{
+    width:350px;
+    padding:9px 0px;
+}
+button.text-secondary.ps-5 
+{
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(249, 246, 246);
+}
+.b
+{
+
+}
+.images{
+    width: 18rem;
+}
+.gap{
+    margin-left: 20px;
+}
+.gap .orange{
+    font-size: 10px !important;
+}
+.delt
+{
+    padding-left: 10px;
 }

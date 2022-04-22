@@ -14,12 +14,17 @@
     	<nav class="navbar navbar-expand-sm ">
 			<div class="container-fluid">
 				<ul class="navbar-nav">
+                    
+                    <!-- <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light"></nav> -->
 					<li class="nav-item ms-3 mt-1">
 						<img src="image/download.png" alt="picture" class="image">
 					</li>
+                    <div class="first">
 					<li class="nav-item ms-2 mt-2">
 						<a class="nav-link text-dark" href="#"><b>MEN</b></a>
 					</li>
+                    
+                    </div>
 					<li class="nav-item ms-2  mt-2">
 						<a class="nav-link text-dark" href="#"><b>WOMEN</b></a>
 					</li>
@@ -58,7 +63,7 @@
 		</nav>
         <section>
             <!-- <div class="container"> -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-12">
                         <a class="navbar-brand12" href="#">Home/</a>
                         <a class="navbar-brand1" href="#">Clothing/</a>
@@ -67,6 +72,29 @@
                         <a class="navbar-brand1" href="#">HRX By Hrithik Roshan Tshirts></a>
                         <a class="navbar-brand1" href="#">More HRX By Hrithik Roshan Tshirts></a>
                     </div>
+                </div> -->
+                <div class="container-fluid mt-3 ms-2">
+                    <span class="p">
+                        <a class="text-dark" href="#">Home</a> / 
+                        
+                    </span>
+                    <span class="p">
+                        <a class="text-dark" href="#">Clothing</a> / 
+                    </span>
+                    <span class="p">
+                        <a class="text-dark" href="#">Men Clothing</a> / 
+                    </span>
+                    <span class="p">
+                        <a class="text-dark" href="#">T-Shirts</a> /
+                    </span>
+                    <span class="p">
+                        <a class="text-dark" href="#"><b>HRX by Hrithik Roshan T-Shirts ></b></a>
+                        
+                    </span>
+                    <span class="p">
+                        <a class="text-dark" href="#"><b>More by HRX Hrithik Roshan</b></a> 
+                        
+                    </span>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
@@ -103,22 +131,74 @@
                         <a class="btn btn-primary" href="#" role="button">L</a>
                         <a class="btn btn-primary" href="#" role="button">XL</a>
                         <a class="btn btn-primary" href="#" role="button">XXL</a><br><br>
+                        <div class="row pt-4">
+                            <div class="d-flex flex-row gap-3">
+                                <button type="button" class="add-button rounded">
+                                    <i class="fa-solid fa-bag-shopping pe-2"></i>
+                                    <b class="b"> ADD TO BAG</b>
+                                </button>
+                                <button type="button" class="wishlist-button rounded">
+                                    <i class="fa-regular fa-heart pe-2"></i>
+                                    <b> WISHLIST</b>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- <i class="fa-solid fa-bag-shopping text-muted"></i>
                         <button type="button" class="btn1 btn-primary btn-lg">ADD TO BAG</button>
-                        <button type="button" class="btn2 btn-secondary btn-lg">WISHLIST</button>
-                        <p>Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+                        <i class="fa-regular fa-heart text-muted"></i>
+                        <button type="button" class="btn2 btn-secondary btn-lg">WISHLIST</button> -->
+                        <div class="row pt-4">
+                            <span><b>DELIVERY OPTIONS</b>
+                                <i class="fa-solid fa-truck ps-3"></i>
+                            </span>
+                        </div>
+                        <div class="row ps-3 pt-4 ">
+                            <div class="d-flex flex-row pincode-box border rounded">
+                                <input type="text" class="input-controls ps-2" placeholder="Enter a PINcode">
+                                <button type="button" class=" text-secondary ps-5">CHECK</button>
+                            </div> 
+                        </div>
+                        <div class="row pt-3">
+                            Please enter PIN code to check delivery time & Pay on Delivery Availability
+                        </div>
+                        <!-- <input type="text" placeholder="Enter a pincode"> -->
+                        <div class="row pt-2">
+                        <div class="text">100% Original Products</div>
+                        <div class="pt-1">Pay on delivery might be available</div>
+                        <div class="pt-1">Easy 30 days returns and exchanges</div>
+                        <div class="pt-1">Try & Buy might be available</div>
+                    </div>
+                        <!-- <p>Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
                         <p>100% Original Products</p>
                         <p>Pay on delivery might be available</p>
                         <p>Easy 30 days returns and exchanges</p>
-                        <p>Try & Buy might be available</p>
-                        <p>BEST OFFERS </p>
-                        <p>Best Price: Rs. 288</p>
-                        <li>Applicable on: Orders above Rs. 799 (only on first purchase)</li>
-                        <li>Coupon code: HELLO200</li>
-                        <li>Coupon Discount: Rs. 96 off (check cart for final savings)</li>
-                        <a class="navbar-brand" href="#">View Eligible Products</a>
+                        <p>Try & Buy might be available</p> -->
+                        <!-- <div class="row ">
+                            <span>BEST OFFERS </span>
+                            <span><i class="fa-solid fa-tag ps-3"></i></span>
+                        </div> -->
+                        
+                        <div class="row pt-5">
+                            <span><b>BEST OFFERS</b><i class="fa-solid fa-tag ps-3"></i></span>
+                            <div class="pt-3">
+                                <b>Best Price:<span class="price-value"> Rs. 288</span></b>
+                            </div>
+                            <ul class="price-list">
+                                <li>Applicable on: Orders above Rs. 799 (only on first purchase)</li>
+                                <li>Coupon code: <b>HELLO200</b></li>
+                                <li>Coupon Discount: Rs. 96 off (check cart for final savings)</li>
+                            </ul>
+                            <div class="row">
+                        <a href="#" class="text-danger text-decoration-none eligible-product"><b>View Eligible Products</b></a>
+                        
+                        <!-- <a class="navbar-brand" href="#">View Eligible Products</a> -->
                         <p>EMI option available</p>
                         <li>EMI starting from Rs.18/month</li>
-                        <a class="navbar-brand" href="#">View Plan</a><hr>
+                    </div>
+                    <div class="row">
+                    <a href="#" class="text-danger text-decoration-none eligible-product"><b>View Plan</b></a><hr><br>
+                        <!-- <a class="navbar-brand" href="#">View Plan</a><hr> -->
+                    </div>
                         <p>PRODUCT DETAILS</p>
                         <p>This season set a sporty fashion trend with the HRX Men's Athleisure T-<br>shirt. This striped casual T-shirt can be worn on its own or layered under a<br> jacket or a hoodie.</p>
                         <h6>Features</h6>
@@ -205,8 +285,264 @@
                 </div>
             <!-- </div> -->
             </section>
+            <h6 class="h66">SIMILAR PRODUCTS</h6>
             <section>
-                <h6>SIMILAR PRODUCTS</h6>
+            <div class="d-flex">
+                    <div class="gap">
+                         <div class="card images">
+                             <img src="image/pic.jpg" class="card-img-top" alt="...">
+                             <div class="card-body ">
+                             <h5 class="card-title">DILLINGER</h5>
+                             <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                             <p>
+                                 <span class="bold">Rs.476</span>
+                                 <del>Rs. 899</del> 
+                                 <span class="orange">
+                                     (47% OFF)
+                                 </span>
+                             </p>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <div class="d-flex">
+                    <div class="gap">
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <div class="d-flex">
+                    <div class="gap">
+                        <div class="card images">
+                            <img src="image/pic.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ">
+                            <h5 class="card-title">DILLINGER</h5>
+                            <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                            <p>
+                                <span>
+                                    <b>Rs.476</b> <del>Rs. 899</del> 
+                                </span>
+                                <span class="orange">
+                                    (47% OFF)
+                                </span>
+                            </p>
+                            </div>
+                </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                <div class="card images">
+                    <img src="image/pic.jpg" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                    <h5 class="card-title">DILLINGER</h5>
+                    <p class="card-text">Colouredblocked Navy Blue T-Shirt</p>
+                    <p>
+                        <span>
+                            <b>Rs.476</b> <del>Rs. 899</del> 
+                        </span>
+                        <span class="orange">
+                            (47% OFF)
+                        </span>
+                    </p>
+                    </div>
+                </div>
+                
+                <div class="clear">
+                </div>
+            
+            </section>
+            <footer>
+
+            </footer>
+                     
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="js/jquery.js"></script>
+        <script src="js/popper.min.js"></script> -->
+	</body>
+</html>
+
+
+
+
+
+<!-- <h6>SIMILAR PRODUCTS</h6>
+<div class="d-flex">
                 <div class="container">
                 <div class="col-md-2">
                 <div class="card" style="width: 18rem;">
@@ -221,46 +557,29 @@
                           <p class="card-text">Huetrap<br>Graphic-cotton-T-shirt<br>Rs.489</p>
                         </div>
                         </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="container">
+                        <div class="col-md-2">
                         <div class="card" style="width: 18rem;">
                             <img src="image/pic.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Huetrap<br>Graphic-cotton-T-shirt<br>Rs.489</p>
                             </div>
+                        </div>
                             <div class="card" style="width: 18rem;">
                                 <img src="image/pic.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <p class="card-text">Huetrap<br>Graphic-cotton-T-shirt<br>Rs.489</p>
                                 </div>
                                 </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/pic.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <p class="card-text">Huetrap<br>Graphic-cotton-T-shirt<br>Rs.489</p>
-                                    </div>
-                                    </div>
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="image/pic.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <p class="card-text">Huetrap<br>Graphic-cotton-T-shirt<br>Rs.489</p>
-                                        </div>
-                                        </div>
-                  </div>
-                </div>
-            
-            </section>
-                     
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- <script src="js/jquery.js"></script>
-        <script src="js/popper.min.js"></script> -->
-	</body>
-</html>
-
-
-
-
-
-
-
+                            </div>
+                            </div>
+                            </div> -->
+                            
+                    
 
 
 
