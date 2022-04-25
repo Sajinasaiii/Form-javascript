@@ -53,44 +53,87 @@ img
     float: right;
     /* margin-bottom: 100px; */
 /* } */
-*{
+*
+{
     font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     margin: 0;
 	padding: 0;
 }
-.image {
+.image 
+{
     width: 50px;
 }
-.navbar-nav {
+/* .hrx
+{
+    font-size: 25px;
+    margin-top: 10px;
+} */
+.navbar-nav 
+{
     background-color: white;
     box-shadow: 5px 10px 8px #f8f8f8;
     border: none;
     padding: 4px;
 }
-.fa-search {
+.large-text
+{
+    font-size:15px;
+}
+.side-text
+{
+    font-size:13px;
+}
+/* .cotton
+{
+    font-size: 18px;
+} */
+.fa-search 
+{
     margin-top: 11px;
     margin-left: 34px;
     position: absolute;
 }
-.search-bar input {
+.small-icon-class
+{
+    font-size:9px;
+    color:white;
+}
+.side-icon-class
+{
+    padding:2px;
+    background-color: rgb(5, 105, 112);
+}
+.search-bar input 
+{
     padding: 10px;
     margin-top: 7px;
     border-radius: 2px;
     border: 1px solid #b5b4b3;
     margin-left: 22px;
 }
-.search-bar input:focus {
+.search-bar input:focus 
+{
     outline: 3px solid #a9e6eb;
-  }
-b {
+}
+b 
+{
     margin-left:13px;
     font-size: 13px;
 }
 .home{
     font-size: 11px;
 }
-
-input[type="text"] {
+.customer-progress-height
+{
+    height:11px;
+    width:130px;
+}
+.customer-photo-img 
+{
+    width:75px;
+}
+input[type="text"] 
+{
     padding-left: 39px;
     width: 594px;
     margin-left: 21px;
@@ -99,40 +142,48 @@ input[type="text"] {
     border: none;
     height: 40px;
 }
-.search-container {
+.search-container
+{
     margin-top: 12px;
 }
-.fa-user {
+.fa-user 
+{
     margin-left: 48px;
     margin-top: 15px;
     font-size: 16px;
 }
-.fa-heart {
+.fa-heart 
+{
     margin-left: 38px;
     margin-top: 15px;
     font-size: 16px;
 }
-.fa-bag-shopping {
+.fa-bag-shopping 
+{
     margin-top: 15px;
     margin-left: 43px;
     font-size: 16px;
 }
-.profile {
+.profile 
+{
     color: black;
     font-size: 14px;
     margin-left: 32px;
 }
-.wishlist {
+.wishlist 
+{
     color: black;
     font-size: 14px;
     margin-left: 24px;
 }
-.bag {
+.bag 
+{
     color: black;
     font-size: 14px;
     margin-left: 32px;
 }
-.text{
+.text
+{
     margin-left:7px;
 }
 .fa-solid
@@ -309,7 +360,7 @@ ul.navbar-nav
 .card-img-top
 {
     float: left;
-    margin-top: -114px;
+    /* margin-top: -114px; */
 }
 .h66
 {
@@ -363,20 +414,91 @@ button.text-secondary.ps-5
     font-weight: bold;
     color: rgb(249, 246, 246);
 }
-.b
+.images
 {
-
-}
-.images{
     width: 18rem;
 }
-.gap{
+.gap
+{
     margin-left: 20px;
 }
-.gap .orange{
+.gap .orange
+{
     font-size: 10px !important;
 }
 .delt
 {
     padding-left: 10px;
 }
+.navang:hover
+{
+    visibility: visible;
+}
+/* .angnav
+{
+    visibility: hidden;
+    position: fixed;
+    /* padding-left: 10px; */
+    /* left: 150px; */
+    /* top: 85px; */
+    /* z-index: 1; */
+    /* background-color: white */
+    /* border:1px solid transparent; */
+
+.content
+{
+    font-size: 14px;
+    visibility: hidden;
+    position: fixed;
+    left: 150px;
+    right: 150px;
+    padding-left: 30px;
+    width: 65%;
+    height: 68%;
+    top: 85px;
+    z-index: 1;
+    background-color: rgb(0, 0, 0,0.3);
+    pointer-events: none;
+    cursor: auto;
+}
+.navlinks
+{
+    cursor: pointer;
+    border-bottom: 3px solid transparent ;
+}
+.navlinks:hover
+{
+    border-bottom: 3px solid red;
+    position: relative;
+    z-index: 2;
+    transition-delay: .15s;
+}
+.navlinks:hover .content
+{
+    visibility: visible;
+}
+.button-new
+{
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 10px;
+    width: 41px;
+    color: white;
+    background-color: red;
+}
+.zero
+{
+    width: 30px;
+    height: 30px;
+}
+.one 
+{
+    width: 246px;
+    height: 47px;
+}
+.flow
+{
+    background-color: white;
+}
+
+  
