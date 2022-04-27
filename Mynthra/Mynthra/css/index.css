@@ -480,6 +480,36 @@ button.text-secondary.ps-5
     font-weight: bold;
     font-size: 13px;
 }
+.size12
+{
+    width: 50%;
+}
+.img6
+{
+    width: 13%;
+    margin: 0 auto;
+}
+.img8
+{
+    width: 500px;
+    margin: 0 auto;
+    /* height: 350px; */
+}
+.butn1
+{
+    padding-top: 10px;
+    /* margin: 0 auto; */
+    margin-left: 10px;
+}
+.bt1
+{
+   margin-left: 250px;
+}
+.text4
+{
+    /* margin: 0 auto; */
+    text-align: center;
+}
 .del1
 {
   font-size: 13px;  
