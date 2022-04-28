@@ -4,10 +4,6 @@
     margin: 0;
 	padding: 0;
 }
-body
-{
-    /* overflow-x: hidden; */
-}
 .image 
 {
     width: 50px;
@@ -96,6 +92,10 @@ b
 .customer-photo-img 
 {
     width:75px;
+}
+.card 
+{
+    margin: 10px;
 }
 /* input[type="text"] 
 {
@@ -352,6 +352,10 @@ ul.navbar-nav
     margin-top: 50px;
     margin-left: 22px;
 }
+.h6
+{
+    font-size: 25px;
+}
 .table
 {
     visibility: hidden;
@@ -497,6 +501,31 @@ button.text-secondary.ps-5
 {
     background-color: white;
 }
+.size12
+{
+    width: 40%;
+    height:60%;
+}
+.img6
+{
+    width: 20%;
+    margin: 0 auto;
+}
+.img8
+{
+    width: 500px;
+    margin: 0 auto;
+    /* height: 350px; */
+}
+.text4
+{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.bt1
+{
+    margin-left: 230px;
+}
 .menlow
 {
     margin-top: 5px;
@@ -513,7 +542,7 @@ button.text-secondary.ps-5
 {
     border-radius: 31px;
     border:1px solid gray; 
-    margin-left: 26%;
+    margin-left: 24%;
     margin-top: 40px;
     color:#ff3e6c;
     font-weight: 500;
