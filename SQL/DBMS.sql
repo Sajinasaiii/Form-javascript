@@ -1,5 +1,5 @@
 create table employees (
-emp_id integer not null,
+emp_id integer primary key not null,
 emp_name varchar(15),
 job_name varchar(10),
 manager_id integer,
@@ -9,12 +9,12 @@ commisssion decimal(7,2),
 dept_id integer
 );
 create table salary_grade (
-grade integer,
+grade integer primary key not null,
 min_salary integer,
 max_salary integer
 );
 create table department (
-dep_id integer,
+dept_id integer primary key not null,
 dep_name varchar(20),
 dep_location varchar(15)
 );
@@ -54,7 +54,7 @@ values(1,800,1300),
 (3,1501,2100),
 (4,2101,3100),
 (5,3101,9999);
-insert into department(dep_id,dep_name,dep_location)
+insert into department(dept_id,dep_name,dep_location)
 values(1001,"FINANCE","SYDNEY"),
 (2001,"AUDIT","MELBOURNE"),
 (3001,"MARKETING","PERTH"),
@@ -63,11 +63,12 @@ select * from employees;
 select salary from employees;
 select distinct job_name from employees;
 select emp_name,
-concat('$',salary*15/100+salary) as salary
+concat('$',round(salary*15/100+salary)) as salary
 from employees;
 select concat(emp_name,"   ",job_name)as "Employee & Job" from employees;
-select * from employees where salary>('3000')(salary*25/100+salary)
-select emp_id,emp_name,salary,date_format(hire_date,'%M %d %Y')from employees;
+select * from employees where salary>('3000')(salary*25/100+salary);
+select * from employees where (1.25*salary)>3000;
+select emp_id,emp_name,salary,date_format(hire_date,'%M %d, %Y')as to_char from employees;
 select length(trim(emp_name))
 from employees;
 select emp_id,salary,commisssion from employees;
@@ -88,7 +89,35 @@ avg(salary+commisssion)as avg
 from employees 
 group by job_name;
 select * from employees where emp_name like'%ar%';
+select employees.emp_id, employees.emp_name, employees.dept_id, department.dep_location, department.dep_name
+from department
+inner join employees on (department.dept_id=employees.dept_id && employees.dept_id in(1001,2001));
+select manager_id,count(manager_id)as count from employees group by manager_id order by manager_id asc;
+select dept_id,count(*)from employees group by dept_id having count(*)>=2;
 alter table employees
-add gender integer;
+add gender varchar(10);
+alter table employees modify gender varchar(10);
+desc employees;
+update employees set gender='male' where emp_id=68319;
+update employees set gender='male' where emp_id=66928;
+update employees set gender='male' where emp_id=67832;
+update employees set gender='male' where emp_id=65646;
+update employees set gender='male' where emp_id=67858;
+update employees set gender='male' where emp_id=69062;
+update employees set gender='male' where emp_id=63679;
+update employees set gender='male' where emp_id=64989;
+update employees set gender='male' where emp_id=65271;
+update employees set gender='male' where emp_id=66564;
 update employees set gender='male' where emp_id=68454;
-update employees set gender='male' where emp_id=68454;
+update employees set gender='male' where emp_id=68736;
+update employees set gender='male' where emp_id=69000;
+update employees set gender='male' where emp_id=69324;
+select emp_name,salary from employees,salary_grade where emp_name='frank' 
+between min_sal and max_sal and salary=max_sal;
+select emp_name, max( salary)
+from employees, salary_grade
+where ((salary between salary_grade.min_salary and salary_grade.max_salary)&& employees.emp_name='frank'); 
+select employees.emp_name,employees.salary from employees,salary_grade where employees.emp_name ='frank'
+and employees.salary between salary_grade.min_salary and salary_grade.max_salary 
+and employees.salary = salary_grade.max_salary;
+
