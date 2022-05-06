@@ -113,7 +113,7 @@ update employees set gender='male' where emp_id=68736;
 update employees set gender='male' where emp_id=69000;
 update employees set gender='male' where emp_id=69324;
 select emp_name,salary from employees,salary_grade where emp_name='frank' 
-between min_sal and max_sal and salary=max_sal;
+and employees.salary between salary_grade.min_sal and salary_grade.max_sal and salary=max_sal;
 select emp_name, max( salary)
 from employees, salary_grade
 where ((salary between salary_grade.min_salary and salary_grade.max_salary)&& employees.emp_name='frank'); 
